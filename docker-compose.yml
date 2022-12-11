@@ -12,9 +12,9 @@ services:
       - PGUSER=francesco
       - PGPASSWORD=12345
       - PGDATABASE=poc_database
-      - PGHOST=nsp_db # NAME OF THE SERVICE
+      - PGHOST=poc_db # NAME OF THE SERVICE
     depends_on:
-      - nsp_db
+      - poc_db
   nsp_db:
     container_name: poc_db
     image: "postgres:12"
